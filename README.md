@@ -6,8 +6,6 @@
 3. Come back with ideas and the rationale on what you would invest in if you were the PM of this team.
 ________________________________________________________________________________________________________________________________________________
 
-My understanding is that Langsmith is great for developers but not great for ML Engineers, Arize has better product for ML Engineers but need to create a better experience for developers to hand off to ML Engineers. Feedback is framed around this idea.
-
 2. a.
 - the latter command in !pip install arize-phoenix arize["AutoEmbeddings"] should be pip install 'arize[AutoEmbeddings]’ in the docs
 - Required a lot of older dependencies (e.g. grpcio==1.34.0, numpy==1.19.2, six==1.15.0), which isn't a huge problem, but if not running on Virtual Environment was kind of annoying
