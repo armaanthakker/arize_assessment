@@ -6,6 +6,9 @@
 3. Come back with ideas and the rationale on what you would invest in if you were the PM of this team.
 ________________________________________________________________________________________________________________________________________________
 
+Since our goal is to evaluate developers experience with Phoenix, I will first focus on tactical onboarding feedback to provide a smooth install and quick time to value, and contrast it with Langsmith. The working assumption is that we need to have developers see the “aha moment” quickly in their onboarding cycle so they can then collaborate or hand-off to ML Engineers where Arize truly shines over any competitor. The more developers are bought into Phoenix, the more they adopt it as LLM apps proliferate and provide a pathway to ML Engineers to adopt the full feature Arize platform. My second section will focus on strategic product feedback to illustrate our value to developers and MLEngineers and some areas to improve our competitive differentiation over Langsmith further.
+
+
 2. a.
 - the latter command in !pip install arize-phoenix arize["AutoEmbeddings"] should be pip install 'arize[AutoEmbeddings]’ in the docs
 - Required a lot of older dependencies (e.g. grpcio==1.34.0, numpy==1.19.2, six==1.15.0), which isn't a huge problem, but if not running on Virtual Environment was kind of annoying
