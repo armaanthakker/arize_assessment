@@ -40,19 +40,10 @@ from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI()  # Uses gpt-3.5-turbo by default
 
-llm.invoke("Hello, chatty, how you doin' today?")
-
-message = llm.invoke("Do you know how to generate flashcards?")
-
-prompt = f"Summarize this text: {message.content}"
-
-summary = llm.invoke(prompt)
-summary.content
-
 
 dataset_name = "PyTorch code syntax"
 
-csv_path = "data/pytorch_code_syntax_flashcards.csv"
+csv_path = "data/olympic_track_results.csv"
 input_keys = ["prompt"]
 output_keys = ["expected_output"]
 
@@ -65,21 +56,21 @@ csv_dataset = client.upload_csv(
 )
 
 
-dataset_name = "deep_learning_fundamentals2"
+dataset_name = "olympic_track_results"
 
 # Creating a blank dataset
 dl_dataset = client.create_dataset(
    dataset_name=dataset_name,
-   description="A deck containing flashcards on NNs and PyTorch",
+   description="A deck containing past results from olympic track and field times",
    data_type="kv",  # default
 )
 
 
 # Storing only inputs into a dataset
 example_inputs = [
-   "Generate a single flashcard on backpropagation",
-   "Generate a single flashcard on the use of torch.no_grad",
-   "Generate a single flashcard on how Adam optimizer",
+   "Generate fastest times in shortest event",
+   "Generate slowest time in longest event",
+   "Generate best athletes",
 ]
 
 for ex in example_inputs:
@@ -119,9 +110,9 @@ results = run_on_dataset(
 )
 
 
-dataset_name = "PyTorch code syntax"
+dataset_name = "Olympic Track Results"
 
-csv_path = "data/pytorch_code_syntax_flashcards.csv"
+csv_path = "data/olympic_track_results.csv"
 input_keys = ["front"]
 output_keys = ["back"]
 
@@ -136,7 +127,7 @@ csv_dataset = client.upload_csv(
 eval_config = RunEvalConfig(
    evaluators=[
        RunEvalConfig.Criteria(
-           {"has_code": "Does the card contain a code syntax question?"}
+           {"has_code": "Does the card contain an athletics question?"}
        ),
        RunEvalConfig.Criteria(
            {
