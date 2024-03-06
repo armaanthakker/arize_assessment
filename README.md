@@ -18,6 +18,6 @@ ________________________________________________________________________________
 - Automated model retraining capabilities: I feel this would be a cool feature to have. With drift detection and model performance metrics, I feel like Phoenix already has the tools necesary to implement an automatic retraining model. It would also streamline the model maintenence process for users making Phoenix much more attractive.
 
 3.
--automated suggestions for feature engineering based on data patterns
--real-time monitoring and alerting capabilities for immediate issue resolution.
+- automated suggestions for feature engineering based on data patterns
+- real-time monitoring and alerting capabilities for immediate issue resolution.
 
