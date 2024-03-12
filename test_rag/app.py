@@ -6,7 +6,7 @@ import phoenix as px
 
 
 
-openai.api_key = "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" #change openai key
+openai.api_key = "aparna-api-key" #change openai key
 corpus_of_documents = [
     "Take a leisurely walk in the park and enjoy the fresh air.",
     "Visit a local museum and discover something new.",
