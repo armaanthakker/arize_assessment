@@ -17,6 +17,8 @@ Since our goal is to evaluate developers experience with Phoenix, I will first f
   
    b.
 - Support for model explainability metrics: Arize does a great job of including multiple explainability metrics such as Feature Importance, SHAP vals, and LIME. However when using Langsmith, I noticed their explainability metrics are much more compact and comprehensive. First of all, their metrics are much more user facing such as fidelity score, consistency, robustness, human satisfaction, etc. Arize focuses much more on data drift and modeling predictions instead of the user-facing explanations/resposnes themselves. I feel integrating a larger scale of explainability metrics could be helpful and give Arize a competitive advantage. Specific metrics I would include would be  Simplicity(evaluating how complex the response is), Explanation Confidence(Quantifying the confidence or certainty of model explanations, indicating how confident the model is in its predictions and explanations. Higher confidence levels increase trust in the model's decisions), Explanation Certainty Under Data Shifts (how well model explanations generalize to new or unseen data distributions. Models with explanations that remain consistent under data shifts are more reliable in real-world scenarios). Other than that, another cool idea could be Subset Feature Stability (how consistent is a feature or cluster of features accross different subsets of the same dataset. More stable features could be better-saw this online).
+
+  WRONGGGG
 - Addtionally, each instance in Langsmith had a platform to see all the metrics together while you may not be able to view all of the metrics together in Arize's platform. Maybe create a UI where user can view all of the metrics in one compact space.
 
 3.
